@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato conosco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/contato.css">
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar">
+       <a href="index.html">Home</a>
+      <a href="publicar.html">Publicar Poema</a>
+      <a href="contato.html">Fale Conosco</a>
+        </nav>
+        <h3 class="viaoda-libre-regular">Viole Marks</h3>
+    </header>
+    <br>
+    <br>
+    <br>
+<div id="config">
+    <h1>Fale conosco</h1>
+    <form action="">
+        <div class="formulario-campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <!-- separação de divs -->
+        <div class="formulario-campo">
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="">Deixe sua mensagem:</option>
+                <option value="nova atividade">Proposta de trabalho</option>
+                <option value="reclamacao">Reclamação</option>
+            </select>
+        </div>
+        <!-- separação de divs -->
+        <div class="formulario-campo">
+            <label for="mensagem">Texto:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+        </div>
+    </div> 
+    <button type="submit" id="enviar-btn">Enviar</button>
+    </form>
+    <footer>
+  <p>&copy; 2025 ViolePoems - @7lugui7 — Todos os direitos reservados.</p>
+</footer>
+
+    <script src="/js/contato.js"></script>
+</body>
+
+</html>

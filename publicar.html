@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar Poema - Viole Poems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/publicar.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="publicar.html">Publicar Poema</a>
+      <a href="contato.html">Fale Conosco</a>
+    </nav>
+    <h3 class="viaoda-libre-regular">Viole Poemas</h3>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Publique seu poema</h2>
+      <form id="formPoema">
+        <input type="text" id="titulo" placeholder="Título do poema">
+        <textarea id="conteudo" placeholder="Escreva seu poema aqui..." maxlength="500"></textarea>
+        <button id="publicar">Publicar</button>
+      </form>
+    </div>
+
+    <div class="container" id="lista-poemas">
+      <h2>Poemas Publicados</h2>
+      <div id="poemas"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ViolePoems - @7lugui7 — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/js/publicar.js"></script>
+</body>
+
+</html>
