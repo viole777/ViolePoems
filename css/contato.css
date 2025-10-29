@@ -41,6 +41,12 @@ header h3{
     
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .formulario-campo{
     display: flex;
     flex: 1;

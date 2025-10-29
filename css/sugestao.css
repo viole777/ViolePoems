@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #505A5C;
+  color: #F2F2F2;
+  font-family: "Viaoda Libre", serif;
+}
+
+.viaoda-libre-regular {
+  font-family: "Viaoda Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+}
+
+header {
+  position: relative;
+  background-color: #3F858C;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #3F858C;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #222326;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #7AB8BF;
+  color: #373740;
+}
+#msg{
+        display: flex;
+    flex: 1;
+    gap: 16px;
+    width: 40%;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+header h3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #F2F2F2;
+  padding: 10px 0;
+}
+footer {
+  background-color: #3F858C;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  position: fixed; /* fica grudado no fim da tela */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+}
