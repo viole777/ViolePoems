@@ -46,3 +46,4 @@ try {
 } catch (exception) {
   console.log("Erro no script:", exception.message);
 }
+localStorage.setItem("publicar", "conteudo");
