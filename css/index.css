@@ -144,7 +144,7 @@ main {
 
 input,
 textarea {
-  width: 90%;
+  width: 30%;
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -157,7 +157,7 @@ textarea {
 }
 
 textarea {
-  height: 150px;
+  height: 70px;
 }
 
 button {

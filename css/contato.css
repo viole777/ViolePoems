@@ -47,13 +47,21 @@ header {
   background-color: #7AB8BF;
   color: #373740;
 }
-#msg{
-        display: flex;
-    flex: 1;
-    gap: 16px;
-    width: 40%;
-    margin-bottom: 8px;
-    align-items: center;
+#msg {
+    display: flex;                 /* Define o elemento como um container flexível, permitindo organizar itens em linha */
+    align-items: center;           /* Alinha os itens verticalmente ao centro dentro do container */
+    gap: 1rem;                     /* Espaçamento entre os elementos internos */
+
+    width: 30%;                    /* Define que o elemento ocupará 30% da largura do container pai */
+    flex: 1;                       /* Permite que o elemento cresça proporcionalmente dentro de um layout flex */
+    margin-bottom: 0.5rem;         /* Espaço abaixo do elemento, para separar de outros abaixo */
+
+    padding: 0.75rem;              /* Espaçamento interno, dando “respiro” ao conteúdo */
+    background: #f5f5f5;           /* Cor de fundo suave e clara */
+    border-radius: 8px;            /* Arredonda os cantos do elemento */
+    border: 1px solid #e0e0e0;     /* Borda leve e discreta */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra suave para dar profundidade */
 }
 
 header h3 {
