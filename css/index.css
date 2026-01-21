@@ -184,3 +184,63 @@ footer {
   padding: 15px 0;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
 }
+/* ===== MOBILE FIRST – CELULARES ===== */
+@media (max-width: 600px) {
+
+  header h3 {
+    position: static;
+    transform: none;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .container {
+    margin: 30px 10px;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .viaoda-libre-regular {
+    font-size: 28px;
+  }
+
+  .imagem {
+    height: 220px;
+    border-radius: 24px;
+    margin: 30px auto;
+  }
+
+  input,
+  textarea,
+  #msg {
+    width: 100%;
+    max-width: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .poema,
+  .poema-card {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .poema h3,
+  .poema-card h3 {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
