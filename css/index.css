@@ -4,154 +4,67 @@
   box-sizing: border-box;
 }
 
-/* ======== ESTILO GERAL DO SITE ======== */
+/* ===== ESTILO GERAL ===== */
 body {
-  background-color: #505A5C; /* Cor de fundo da página */
-  color: #F2F2F2; /* Cor padrão do texto */
-  font-family: "Viaoda Libre", serif; /* Fonte principal */
-}
-
-/*fonte personalizada */
-.viaoda-libre-regular {
+  background-color: #505A5C;
+  color: #F2F2F2;
   font-family: "Viaoda Libre", serif;
-  font-weight: 800; /* Deixa a fonte mais grossa */
-  font-style: normal;
-  font-size: 40px; /* Tamanho grande do texto */
 }
 
-/*HEADER (CABEÇALHO)*/
+/* Fonte grande */
+.viaoda-libre-regular {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+/* ===== HEADER ===== */
 header {
-  position: relative; /* Permite posicionar elementos dentro do header */
-  background-color: #3F858C; /* Cor de fundo do topo */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4); /* Sombra abaixo do header */
+  position: relative;
+  background-color: #3F858C;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
-/* Título centralizado dentro do header */
 header h3 {
-  position: absolute; /* Permite centralizar manualmente */
-  left: 50%; /* Vai para o meio */
-  transform: translateX(-50%); /* Ajusta para ficar exatamente no centro */
-  color: #F2F2F2; /* Cor do texto */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px 0;
 }
 
-/*MENU*/
+/* ===== NAVBAR ===== */
 .navbar {
-  overflow: hidden; /* Evita quebra de layout */
-  background-color: #3F858C; /* Cor do menu */
+  background-color: #3F858C;
+  overflow: hidden;
 }
 
-/* Links do menu */
 .navbar a {
-  float: left; /* Coloca os links lado a lado */
-  display: block;                         
-  color: #222326; /* Cor do texto */
-  text-align: center;
-  padding: 14px 16px; /* Espaçamento interno */
-  text-decoration: none; /* Remove sublinhado */
-  font-weight: bold; /* Deixa em negrito */
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #222326;
 }
 
-/* Efeito ao passar o mouse */
 .navbar a:hover {
   background-color: #7AB8BF;
   color: #373740;
 }
 
-/*CONTAINERS*/
-.container {
-  border-radius: 24px; /* Bordas arredondadas */
-  margin: 60px auto; /* Centraliza e adiciona margens */
-  padding: 34px;
-  width: 700px; /* Largura padrão */
-  background-color: #497A89; /* Fundo do container */
-  font-size: 20px;
-  text-align: center;
-  transition: 0.4s;/* Animação suave */
-}
-
-/* Leve zoom ao passar o mouse */
-.container:hover {
-  transform: scale(1.01);
-}
-
-/*IMAGENS*/
-
-.imagem {
-  display: block;
-  margin: 60px auto;
-  width: 700px;
-  border-radius: 44px;  /* Bordas arredondadas */
-  height: 360px;
-  object-fit: cover;   /* Mantém proporção cortando excesso */
-}
-
-/*  CAMPOS DE FORMULÁRIO */
-input, textarea {
-  width: 90%;   /* Largura grande */
-  margin: 10px 0;
-  padding: 10px;
-  border: none;  /* Remove bordas padrão */
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: "Viaoda Libre", serif;
-  resize: none; /* Impede redimensionar */
-}
-
-/* BOTÃO */
-button {
-  background-color: #3F858C;
-  border: none;
-  color: #fff; /* Texto branco */
-  padding: 10px 20px;
-  margin-top: 10px;
-  border-radius: 10px;
-  cursor: pointer; /* Muda cursor ao passar o mouse */
-  transition: 0.3s;
-  font-family: "Viaoda Libre", serif;
-}
-
-/* Efeito no hover do botão */
-button:hover {
-  background-color: #7AB8BF;
-  color: #222;
-}
-
-/* CARD DE POEMA PARA LISTAGEM */
-.poema-card {
-  background-color: #5A8E9A; /* Fundo do card */
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px 0;
-  text-align: left;
-  transition: 0.3s;
-}
-
-/* Efeito ao passar o mouse */
-.poema-card:hover {
-  background-color: #6FA8B4;
-}
-
-.poema-card h3 {
-  margin-bottom: 10px;
-}
-
-/* MAIN */
+/* ===== MAIN ===== */
 main {
-  flex: 1;
-  padding-bottom: 80px; /* Dá espaço para o rodapé fixo */
+  padding-bottom: 100px;
 }
 
-/* CONTAINER AJUSTADO */
+/* ===== CONTAINER ===== */
 .container {
-  border-radius: 24px;
   margin: 60px auto;
   padding: 34px;
-  width: 90%;       /* Responsivo */
-  max-width: 700px; /* Largura máxima */
+  width: 90%;
+  max-width: 700px;
   background-color: #497A89;
-  font-size: 20px;
+  border-radius: 24px;
   text-align: center;
+  font-size: 20px;
   transition: 0.4s;
 }
 
@@ -159,36 +72,48 @@ main {
   transform: scale(1.01);
 }
 
-/* INPUTS E TEXTAREA (2ª DEFINIÇÃO – SOBREESCREVE A 1ª) */
+/* ===== IMAGEM ===== */
+.imagem {
+  display: block;
+  margin: 60px auto;
+  width: 90%;
+  max-width: 700px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 44px;
+}
+
+/* ===== FORM ===== */
 input,
 textarea {
-  width: 30%; /* Aqui reduz a largura */
-  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
   padding: 10px;
-  border: none;
   border-radius: 10px;
+  border: none;
   font-size: 16px;
-  font-family: "Viaoda Libre", serif;
+  font-family: inherit;
   resize: none;
-  background-color: #f2f2f2; /* Fundo claro */
+  background-color: #f2f2f2;
   color: #222;
+  display: block;
 }
 
 textarea {
-  height: 70px; /* Altura fixa */
+  height: 70px;
 }
 
-/* BOTÃO*/
+/* ===== BOTÃO ===== */
 button {
   background-color: #3F858C;
-  border: none;
   color: #fff;
+  border: none;
   padding: 10px 20px;
-  margin-top: 10px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
-  font-family: "Viaoda Libre", serif;
+  font-family: inherit;
 }
 
 button:hover {
@@ -196,13 +121,13 @@ button:hover {
   color: #222;
 }
 
-/* LISTA DE POEMAS */
+/* ===== POEMAS ===== */
 #lista-poemas {
   text-align: center;
 }
 
-/* CARD DE CADA POEMA */
-.poema {
+.poema,
+.poema-card {
   background-color: #5A8E9A;
   border-radius: 15px;
   padding: 20px;
@@ -211,78 +136,51 @@ button:hover {
   max-width: 650px;
   text-align: left;
   transition: 0.3s;
-  word-wrap: break-word; /* Evita quebrar layout com palavras grandes */
+  word-wrap: break-word;
 }
 
-/* Hover no card */
-.poema:hover {
+.poema:hover,
+.poema-card:hover {
   background-color: #6FA8B4;
 }
 
-/* Título do poema */
-.poema h3 {
+.poema h3,
+.poema-card h3 {
   margin-bottom: 10px;
-  color: #fff;
   font-size: 22px;
 }
 
-/* Texto do poema */
-.poema p {
-  white-space: pre-line; /* Mantém quebras de linha no texto */
-  font-size: 18px;
-  color: #f1f1f1;
-}
-
+.poema p,
 .poema-card p {
   white-space: pre-line;
   font-size: 18px;
 }
+
+/* ===== MENSAGEM ===== */
 #msg {
-    display: flex;                 /* Define o elemento como um container flexível, permitindo organizar itens em linha */
-    align-items: center;           /* Alinha os itens verticalmente ao centro dentro do container */
-    gap: 1rem;                     /* Espaçamento entre os elementos internos */
-
-    width: 30%;                    /* Define que o elemento ocupará 30% da largura do container pai */
-    flex: 1;                       /* Permite que o elemento cresça proporcionalmente dentro de um layout flex */
-    margin-bottom: 0.5rem;         /* Espaço abaixo do elemento, para separar de outros abaixo */
-
-    padding: 0.75rem;              /* Espaçamento interno, dando “respiro” ao conteúdo */
-    background: #f5f5f5;           /* Cor de fundo suave e clara */
-    border-radius: 8px;            /* Arredonda os cantos do elemento */
-    border: 1px solid #e0e0e0;     /* Borda leve e discreta */
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra suave para dar profundidade */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 0.5rem;
+  padding: 0.75rem;
+  background: #f5f5f5;
+  color: #222;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
-header h3 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #F2F2F2;
-  padding: 10px 0;
-}
+/* ===== FOOTER ===== */
 footer {
-  background-color: #3F858C;
-  color: #F2F2F2;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  position: fixed; /* fica grudado no fim da tela */
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
-}
-/* RODAPÉ FIXO */
-footer {
   background-color: #3F858C;
   color: #F2F2F2;
   text-align: center;
   padding: 15px 0;
-  font-size: 16px;
-  position: fixed;  /* Fica grudado no fim da tela */
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Ocupa toda a largura */
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.4); /* Sombra acima do footer */
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
 }
