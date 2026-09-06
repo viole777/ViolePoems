@@ -40,10 +40,8 @@ try {
       alert("Seu poema foi publicado!");
       form.reset();
     }
-    publicarBtn.addEventListener("click", publicarPoema);
   }
-  publicarBtn.addEventListener("click", publicarPoema);
+  form.addEventListener("submit", publicarPoema);
 } catch (exception) {
   console.log("Erro no script:", exception.message);
 }
-localStorage.setItem("publicar", "conteudo");

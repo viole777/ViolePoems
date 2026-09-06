@@ -1,42 +1,33 @@
 try {
-    const form = document.querySelector("form") ?? null;
-    const nomeImput = document.querySelector("#nome");
-    const assuntoSelect = document.querySelector("#assunto");
+    const form = document.querySelector("form");
+    const nomeInput = document.querySelector("#nome");
     const mensagemTextarea = document.querySelector("#mensagem");
-    const enviarBtn = document.querySelector("#enviar-btn");
-
+    const status = document.querySelector("#contato-status");
 
     function validarFormulario(evento) {
         evento.preventDefault();
-        let valido = true;
+        const nome = nomeInput.value.trim();
+        const mensagem = mensagemTextarea.value.trim();
 
-        if (nomeImput.value.trim() === '') {
-            valido = false;
-            alert("O campo de nome não pode estar vazio.");
+        if (nome === "" || mensagem === "") {
+            if (status) {
+                status.textContent = "Preencha seu nome e sua mensagem antes de enviar.";
+                status.classList.add("erro");
+            }
+            return;
         }
 
-        if (mensagemTextarea.value.trim() === '') {
-
-            valido = false;
-            alert("mensagem não pode ser vazia.");
-
-        }
-
-        else if (mensagemTextarea.value.trim().length > 500) {
-            valido = false;
-            alert("A mensagem deve ter menos de 500 caracteres.");
-        }
-
-        if (valido) {
+        if (status) {
+            status.textContent = `Obrigado, ${nome}! Sua mensagem foi recebida.`;
+            status.classList.remove("erro");
+        } else {
             alert("Agradecemos seu contato");
-            form.submit();
         }
-
+        form.reset();
     }
 
-    enviarBtn.addEventListener('click', validarFormulario);} 
-
-
+    form.addEventListener("submit", validarFormulario);
+}
 catch (exception) {
-    console.log(exception.message)
+    console.log("Erro no formulário:", exception.message);
 }

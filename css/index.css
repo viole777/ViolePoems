@@ -85,7 +85,8 @@ main {
 
 /* ===== FORM ===== */
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   max-width: 400px;
   margin: 10px auto;
@@ -98,6 +99,48 @@ textarea {
   background-color: #f2f2f2;
   color: #222;
   display: block;
+}
+
+label {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 14px auto 4px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.contato-container {
+  margin-top: 60px;
+}
+
+.contato-container h1 {
+  margin-bottom: 8px;
+}
+
+.eyebrow {
+  color: #B7E0E2;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contato-intro {
+  max-width: 480px;
+  margin: 0 auto 18px;
+  font-size: 16px;
+}
+
+#contato-status {
+  min-height: 24px;
+  max-width: 400px;
+  margin: 14px auto 0;
+  font-size: 15px;
+  color: #D8F3DC;
+}
+
+#contato-status.erro {
+  color: #FFD6D6;
 }
 
 textarea {
@@ -174,9 +217,6 @@ button:hover {
 
 /* ===== FOOTER ===== */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background-color: #3F858C;
   color: #F2F2F2;
@@ -218,6 +258,7 @@ footer {
 
   input,
   textarea,
+  select,
   #msg {
     width: 100%;
     max-width: none;
